@@ -1,30 +1,4 @@
-// "use client";
-// import { useState } from "react";
 
-// export default function Home() {
-//   const [products, setProducts] = useState([]);
-
-//   const getProducts = async () => {
-//     try {
-//       const data = await fetch("https://dummyjson.com/products");
-//       const result = await data.json();
-//       console.log(result.products);
-//       setProducts(result);
-//     } catch (error) {
-//       console.log("Error");
-//     }
-//   };
-//   return (
-//     <main className="bg-white min-h-screen">
-//       <button className="p-10 text-black bg-white" onClick={getProducts}>
-//         show
-//       </button>
-//       {products.map((pro: any) => {
-//         return <div>{pro.id}</div>;
-//       })}
-//     </main>
-//   );
-// }
 "use client";
 import { useState } from "react";
 
