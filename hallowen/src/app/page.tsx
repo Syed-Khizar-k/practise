@@ -3,6 +3,9 @@ import Header from "@/components/header";
 import Category from "@/components/category";
 import About from "@/components/about";
 import Candy from "@/components/candy";
+import Discount from "@/components/discountsec";
+import NewArrival from "@/components/newarrivals";
+import NewsLetter from "@/components/newsletter";
 export default function Home() {
   return (
     <>
@@ -13,6 +16,9 @@ export default function Home() {
           <Category></Category>
           <About></About>
           <Candy></Candy>
+          <Discount></Discount>
+          <NewArrival></NewArrival>
+          <NewsLetter></NewsLetter>
         </div>
       </main>
     </>

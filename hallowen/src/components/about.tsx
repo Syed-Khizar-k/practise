@@ -9,7 +9,6 @@ const About = () => {
           About Hallowen Night
         </h1>
         <p className="py-[20px]">
-          {" "}
           Night of all the saints, or all the dead is celebrated on October 31
           and it is a very funny international celebration , this celebration
           comes from ancient origins and is celebrated by everyone{" "}
