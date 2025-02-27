@@ -3,7 +3,7 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Button from "./button";
 const Header = () => {
   return (
-    <section className="w-full flex-wrap md:flex-nowrap flex py-[50px] items-center justify-center">
+    <section className="w-full flex-wrap md:flex-nowrap flex py-[50px] items-center justify-center" id="header">
       <div className="md:w-[50%] w-full">
         <img src="/home2-img.png" alt="" className="w-full " />
         <div className="flex gap-2 items-center px-[20px]">

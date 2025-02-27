@@ -2,7 +2,7 @@ import CandyCard from "./candycard";
 
 const Candy = () => {
   return (
-    <section id="Candy" className="min-h-screen py-[70px]">
+    <section id="candy" className="min-h-screen py-[70px]">
       <h1 className="text-[48px] font-[900] text-center pb-[50px]">
         Trick Or Teat
       </h1>

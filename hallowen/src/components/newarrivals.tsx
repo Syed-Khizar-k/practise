@@ -1,7 +1,7 @@
 import ArrivalCard from "./arrivalCard";
 const NewArrival = () => {
   return (
-    <section className="min-h-screen">
+    <section className="min-h-screen" id="newarrival">
       <h1 className="text-[46px] font-[900] text-center py-[20px]">
         New Arrivals
       </h1>

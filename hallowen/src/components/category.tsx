@@ -1,6 +1,6 @@
 const category = () => {
   return (
-    <section className="min-h-screen w-full md:pt-[5vw] pt-[100px]" >
+    <section className="min-h-screen w-full md:pt-[5vw] pt-[100px]" id="category" >
       <div>
         <h1 className="text-center text-[48px] capitalize font-[900] leading-[45px]">
           favourite scare <br /> category
