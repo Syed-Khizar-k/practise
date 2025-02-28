@@ -1,8 +1,12 @@
+"use client";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
+
 const NavBar = () => {
+  const [isActive, SetisActive] = useState(false);
   return (
-    <nav className="flex justify-between items-center py-[10px] ">
+    <nav className="flex justify-between items-center py-[10px]  ">
       <a className="flex items-center font-[900] gap-2" href="/">
         <img src="/favicon.png" alt="Logo" />
         <span>Halloween</span>
@@ -42,12 +46,37 @@ const NavBar = () => {
           </li>
         </ul>
         <div className="  text-white md:hidden ">
-          <a href="#newsletter">
+          <button
+            onClick={() => {
+              SetisActive(!isActive);
+            }}>
             <FontAwesomeIcon
-              icon={faBars}
+              icon={isActive ? faXmark : faBars}
               size="2x"
               className="h-[22px]"></FontAwesomeIcon>
-          </a>
+          </button>
+        </div>
+        <div
+          className={` mobile w-[50vw] h-[50vh] bg-gray-800/15 backdrop-blur-lg absolute right-[0] p-[20px] 
+            ${isActive ? "opacity-100 scale-100" : "opacity-0 scale-90"}
+        `}>
+          <ul className="text-[18px] font-[900]">
+            <li className="py-[10px]">
+              <a href="/">Home</a>
+            </li>
+            <li className="py-[10px]">
+              <a href="#about">About</a>
+            </li>
+            <li className="py-[10px]">
+              <a href="#candy">Candy</a>
+            </li>
+            <li className="py-[10px]">
+              <a href="#newarrival">New</a>
+            </li>
+            <li className="py-[10px]">
+              <a href="#newsletter">Support</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
