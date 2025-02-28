@@ -7,7 +7,7 @@ import {
 const Footer = () => {
   return (
     <footer className="min-h-[50vh] pt-[70px]" id="footer">
-      <div className="flex justify-between">
+      <div className="flex justify-evenly">
         <div className="hidden md:block">
           <a className="flex items-center font-[900] gap-2 " href="/">
             <img src="/favicon.png" alt="Logo" />
@@ -30,8 +30,8 @@ const Footer = () => {
         </div>
 
         <div className="about">
-          <h1 className="text-[20px] md:text-[24px] font-[900]">About</h1>
-          <ul>
+          <h1 className="text-[16px] md:text-[24px] font-[900]">About</h1>
+          <ul className="text-[14px] md:text-[18px]">
             <li>
               <a href="#about">About Us</a>
             </li>
@@ -45,10 +45,10 @@ const Footer = () => {
         </div>
 
         <div className="services">
-          <h1 className="text-[20px] md:text-[24px] font-[900]">
+          <h1 className="text-[16px] md:text-[24px] font-[900]">
             Our Services
           </h1>
-          <ul>
+          <ul className="text-[14px] md:text-[18px]">
             <li>
               <a href="#candy">Pricing</a>
             </li>
@@ -62,8 +62,8 @@ const Footer = () => {
         </div>
 
         <div className="company ">
-          <h1 className="text-[20px] md:text-[24px] font-[900]">Our Company</h1>
-          <ul>
+          <h1 className="text-[16px] md:text-[24px] font-[900]">Our Company</h1>
+          <ul className="text-[14px] md:text-[18px]">
             <li>
               <a href="#category">Blog</a>
             </li>
