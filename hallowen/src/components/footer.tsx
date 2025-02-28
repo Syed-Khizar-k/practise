@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="min-h-[50vh] pt-[70px]" id="footer">
       <div className="flex justify-between">
-        <div>
+        <div className="hidden md:block">
           <a className="flex items-center font-[900] gap-2 " href="/">
             <img src="/favicon.png" alt="Logo" />
             <span className="md:text-[20px] text-[16px]">Halloween</span>
@@ -61,7 +61,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="company hidden md:block">
+        <div className="company ">
           <h1 className="text-[20px] md:text-[24px] font-[900]">Our Company</h1>
           <ul>
             <li>
