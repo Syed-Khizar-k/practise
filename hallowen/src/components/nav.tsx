@@ -60,8 +60,12 @@ const NavBar = () => {
           className={` mobile w-[50vw] h-[50vh] bg-gray-800/15 backdrop-blur-lg absolute right-[0] p-[20px] 
             ${isActive ? "opacity-100 scale-100" : "opacity-0 scale-90"}
         `}>
-          <ul className="text-[18px] font-[900]">
-            <li className="py-[10px]">
+          <ul
+            className="text-[18px] font-[900]"
+            onClick={() => {
+              SetisActive(false);
+            }}>
+            <li className="py-[10px] ">
               <a href="/">Home</a>
             </li>
             <li className="py-[10px]">
