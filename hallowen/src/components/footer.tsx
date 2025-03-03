@@ -4,18 +4,18 @@ import {
   faInstagram,
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
+import elemdata from "@/data/elemdata.json";
 const Footer = () => {
+  const data = elemdata.footer;
   return (
     <footer className="min-h-[50vh] pt-[70px]" id="footer">
       <div className="flex justify-evenly">
         <div className="hidden md:block">
           <a className="flex items-center font-[900] gap-2 " href="/">
-            <img src="/favicon.png" alt="Logo" />
-            <span className="md:text-[20px] text-[16px]">Halloween</span>
+            <img src={data.img} alt="Logo" />
+            <span className="md:text-[20px] text-[16px]">{data.logo}</span>
           </a>
-          <p className="py-[10px] text-[12px] md:text-[18px]">
-            Enjoy the scariest night of your life
-          </p>
+          <p className="py-[10px] text-[12px] md:text-[18px]">{data.p}</p>
           <div className="flex md:gap-4 gap-2 py-[10px]">
             <FontAwesomeIcon
               icon={faFacebook}
@@ -30,55 +30,57 @@ const Footer = () => {
         </div>
 
         <div className="about">
-          <h1 className="text-[16px] md:text-[24px] font-[900]">About</h1>
+          <h1 className="text-[16px] md:text-[24px] font-[900]">
+            {data.about.h1}
+          </h1>
           <ul className="text-[14px] md:text-[18px]">
             <li>
-              <a href="#about">About Us</a>
+              <a href="#about">{data.about.l1}</a>
             </li>
             <li>
-              <a href="#header">Features</a>
+              <a href="#header">{data.about.l2}</a>
             </li>
             <li>
-              <a href="#newarrival">News</a>
+              <a href="#newarrival">{data.about.l3}</a>
             </li>
           </ul>
         </div>
 
         <div className="services">
           <h1 className="text-[16px] md:text-[24px] font-[900]">
-            Our Services
+            {data.services.h1}
           </h1>
           <ul className="text-[14px] md:text-[18px]">
             <li>
-              <a href="#candy">Pricing</a>
+              <a href="#candy">{data.services.l1}</a>
             </li>
             <li>
-              <a href="#discount">Discounts</a>
+              <a href="#discount">{data.services.l2}</a>
             </li>
             <li>
-              <a href="#">Shipping mode</a>
+              <a href="#">{data.services.l3}</a>
             </li>
           </ul>
         </div>
 
         <div className="company ">
-          <h1 className="text-[16px] md:text-[24px] font-[900]">Our Company</h1>
+          <h1 className="text-[16px] md:text-[24px] font-[900]">
+            {data.company.h1}
+          </h1>
           <ul className="text-[14px] md:text-[18px]">
             <li>
-              <a href="#category">Blog</a>
+              <a href="#category">{data.company.l1}</a>
             </li>
             <li>
-              <a href="#about">About us</a>
+              <a href="#about">{data.company.l2}</a>
             </li>
             <li>
-              <a href="#header">Our mission</a>
+              <a href="#header">{data.company.l3}</a>
             </li>
           </ul>
         </div>
       </div>
-      <p className="text-center pt-[60px]">
-        © CandyToffee. Developed by Syed Khizar
-      </p>
+      <p className="text-center md:pt-[60px] pt-[70px]">{data.label}</p>
     </footer>
   );
 };

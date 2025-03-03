@@ -1,0 +1,156 @@
+{
+  "navigation": {
+    "img": "/favicon.png",
+    "logo": "Hallowen",
+    "l1": "Home",
+    "l2": "About",
+    "l3": "Candy",
+    "l4": "New",
+    "l5": "Support"
+  },
+
+  "header": {
+    "hash": "#2 top best duo",
+    "h1": "Bring back my cotton candy",
+    "p": "Adino steals cotton candy from his brother and eats them all in one bite , a hungry beast . grahami can no longer contain his anger towards Andino",
+    "hb": "Book now",
+    "hlb": "Track Record",
+    "himg": "/home2-img.png",
+    "designh1": "Adino & Grahami",
+    "designp": "No words can describe them"
+  },
+
+  "category": {
+    "h1": "favourite scare category",
+    "item1": {
+      "img": "/category1-img.png",
+      "h1": "Ghosts",
+      "p": "Choose the ghosts, the scariest there are"
+    },
+    "item2": {
+      "img": "/category2-img.png",
+      "h1": "Pumpkins",
+      "p": "You look at the Pumpkins, the scariest there are"
+    },
+    "item3": {
+      "img": "/category3-img.png",
+      "h1": "Wish Hat",
+      "p": "Pich the most stylish Wish hat that you want out there"
+    }
+  },
+
+  "about": {
+    "h1": "About Hallowen Night",
+    "p": "Night of all the saints, or all the dead is celebrated on October 31 and it is a very funny international celebration , this celebration comes from ancient origins and is celebrated by everyone",
+    "btn": "View more",
+    "img": "/about-img.png"
+  },
+
+  "candy": {
+    "mh1": "Trick Or Teat",
+    "item1": {
+      "img": "/trick-treat1-img.png",
+      "h1": "toffee",
+      "p": "candy",
+      "price": "$ 12.12"
+    },
+    "item2": {
+      "img": "/trick-treat2-img.png",
+      "h1": "bone",
+      "p": "accessory",
+      "price": "$ 8.99"
+    },
+    "item3": {
+      "img": "/trick-treat3-img.png",
+      "h1": "sacrecrow",
+      "p": "accessory",
+      "price": "$ 15.10"
+    },
+    "item4": {
+      "img": "/trick-treat4-img.png",
+      "h1": "candy cane",
+      "p": "candy",
+      "price": "$ 7.0"
+    },
+    "item5": {
+      "img": "/trick-treat5-img.png",
+      "h1": "pumpkin",
+      "p": "candy",
+      "price": "$ 19.97"
+    },
+    "item6": {
+      "img": "/trick-treat6-img.png",
+      "h1": "ghost",
+      "p": "accessory",
+      "price": "$ 17.99"
+    }
+  },
+
+  "discount": {
+    "img": "/discount-img.png",
+    "h1": "50% Discount On New Products",
+    "btn": "Go to new"
+  },
+
+  "newArrivals": {
+    "h1": "New Arrivals",
+
+    "item1": {
+      "img": "/new6-img.png",
+      "h1": "Wish Broom",
+      "p": "Accessory",
+      "price": "$7.99",
+      "disc": "$14.99",
+      "status": "New"
+    },
+
+    "item2": {
+      "img": "/new1-img.png",
+      "h1": "Haunted House",
+      "p": "Accessory",
+      "price": "$14.99",
+      "disc": "$23.70",
+      "status": "New"
+    },
+    "item3": {
+      "img": "/new2-img.png",
+      "h1": "Hallowen Candle",
+      "p": "Accessory",
+      "price": "$11.99",
+      "disc": "$28.99",
+      "status": "New"
+    }
+  },
+
+  "newsletter": {
+    "h1": "Our Newsletter",
+    "p": "Promotion new products and sales Directly to your inbox",
+    "btn": "Subscribe"
+  },
+
+  "footer": {
+    "img": "/favicon.png",
+    "logo": "Hallowen",
+    "p": "Enjoy the scariest night of your life",
+    "label": " © CandyToffee. Developed by Syed Khizar",
+
+    "about": {
+      "h1": "About",
+      "l1": "About Us",
+      "l2": "Features",
+      "l3": "News"
+    },
+    "services": {
+      "h1": "Our Services",
+      "l1": "Pricings",
+      "l2": "Discounts",
+      "l3": "Shipping Mode"
+    },
+    "company": {
+      "h1": "Our Company",
+      "l1": "Blog",
+      "l2": "About Us",
+      "l3": "Our Mission"
+    }
+  }
+}

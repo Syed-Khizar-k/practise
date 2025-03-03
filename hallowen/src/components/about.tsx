@@ -1,23 +1,23 @@
+import elemdata from "@/data/elemdata.json";
 import Button from "./button";
 const About = () => {
+  const data = elemdata.about;
   return (
     <section
       className="min-h-screen pt-[90px] md:pt-[2vw] flex justify-center items-center flex-wrap md:flex-nowrap"
       id="about">
       <div className="md:w-[50%]">
         <h1 className="text-[48px] font-[900] capitalize leading-[45px]">
-          About Hallowen Night
+          {data.h1}
         </h1>
         <p className="py-[20px]">
-          Night of all the saints, or all the dead is celebrated on October 31
-          and it is a very funny international celebration , this celebration
-          comes from ancient origins and is celebrated by everyone{" "}
+        {data.p}
         </p>
-        <Button text="View more" />
+        <Button text={data.btn} />
       </div>
       <div className="md:w-[50%]  ">
         <img
-          src="/about-img.png"
+          src={data.img}
           alt=""
           className="md:h-[600px] h-[300px] md:px-[40px]"
         />

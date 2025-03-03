@@ -8,6 +8,7 @@ import NewArrival from "@/components/newarrivals";
 import NewsLetter from "@/components/newsletter";
 import Footer from "@/components/footer";
 
+
 export default function Home() {
   return (
     <>

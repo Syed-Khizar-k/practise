@@ -1,47 +1,48 @@
 import CandyCard from "./candycard";
-
+import elemdata from "@/data/elemdata.json";
 const Candy = () => {
+  const data = elemdata.candy;
   return (
     <section id="candy" className="min-h-screen py-[70px]">
       <h1 className="text-[48px] font-[900] text-center pb-[50px]">
-        Trick Or Teat
+        {data.mh1}
       </h1>
       <div className="grid justify-center gap-6 md:grid-cols-3 md:px-[100px]">
         <CandyCard
-          hea="toffee"
-          par="candy"
-          price="$ 12.12"
-          img="/trick-treat1-img.png"
+          hea={data.item1.h1}
+          par={data.item1.p}
+          price={data.item1.price}
+          img={data.item1.img}
         />
         <CandyCard
-          hea="bone"
-          par="accessory"
-          price="$ 8.99"
-          img="/trick-treat2-img.png"
+          hea={data.item2.h1}
+          par={data.item2.p}
+          price={data.item2.price}
+          img={data.item2.img}
         />
         <CandyCard
-          hea="sacrecrow"
-          par="accessory"
-          price="$ 15.10"
-          img="/trick-treat3-img.png"
+          hea={data.item3.h1}
+          par={data.item3.p}
+          price={data.item3.price}
+          img={data.item3.img}
         />
         <CandyCard
-          hea="candy cane"
-          par="candy"
-          price="$ 7.0"
-          img="/trick-treat4-img.png"
+          hea={data.item4.h1}
+          par={data.item4.p}
+          price={data.item4.price}
+          img={data.item4.img}
         />
         <CandyCard
-          hea="pumpkin"
-          par="candy"
-          price="$ 19.97"
-          img="/trick-treat5-img.png"
+          hea={data.item5.h1}
+          par={data.item5.p}
+          price={data.item5.price}
+          img={data.item5.img}
         />
         <CandyCard
-          hea="ghost"
-          par="accessory"
-          price="$ 17.99"
-          img="/trick-treat6-img.png"
+          hea={data.item6.h1}
+          par={data.item6.p}
+          price={data.item6.price}
+          img={data.item6.img}
         />
       </div>
     </section>

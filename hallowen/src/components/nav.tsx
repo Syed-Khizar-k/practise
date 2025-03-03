@@ -2,15 +2,16 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
-
+import elemdata from "@/data/elemdata.json";
 const NavBar = () => {
+  const data = elemdata.navigation;
   const [isActive, SetisActive] = useState(false);
   return (
-    <nav className="w-full fixed z-30 ">
-      <div className="flex justify-between items-center py-[10px] md:max-w-5xl max-w-[80vw]">
+    <nav className="w-full fixed z-30 backdrop-blur-sm">
+      <div className="flex justify-between items-center py-[10px] md:max-w-5xl max-w-[80vw] ">
         <a className="flex items-center font-[900] gap-2" href="/">
-          <img src="/favicon.png" alt="Logo" />
-          <span>Halloween</span>
+          <img src={data.img} alt="Logo" />
+          <span>{data.logo}</span>
         </a>
         <div className="">
           <ul className="hidden  md:flex justify-center items-center gap-8 font-medium">
@@ -18,32 +19,32 @@ const NavBar = () => {
               <a
                 href="/"
                 className="after:block after:h-1 after:w-1 after:ml-5 after:rounded-lg after:bg-white after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
-                Home
+                {data.l1}
               </a>
             </li>
             <li>
               <a
                 href="#about"
                 className="after:block after:h-1 after:w-1 after:ml-5 after:rounded-lg after:bg-white after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
-                About
+                {data.l2}
               </a>
             </li>
             <li>
               <a
                 href="#candy"
                 className="after:block after:h-1 after:w-1 after:ml-5 after:rounded-lg after:bg-white after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
-                Candy
+                {data.l3}
               </a>
             </li>
             <li>
               <a
                 href="#newarrival"
                 className="after:block after:h-1 after:w-1 after:ml-5 after:rounded-lg after:bg-white after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
-                New
+                {data.l4}
               </a>
             </li>
             <li className="py-[6px] px-[15px] border border-white rounded-3xl">
-              <a href="#newsletter">Support</a>
+              <a href="#newsletter">{data.l5}</a>
             </li>
           </ul>
           <div className="  text-white md:hidden ">
@@ -58,7 +59,7 @@ const NavBar = () => {
             </button>
           </div>
           <div
-            className={` mobile w-[50vw] h-[50vh] bg-gray-800/15 backdrop-blur-lg absolute right-[0] p-[20px] 
+            className={` mobile w-[70vw] h-[50vh] bg-gray-800/15 backdrop-blur-lg   absolute right-[0] p-[20px] 
             ${isActive ? "opacity-100 scale-100" : "opacity-0 scale-90"}
         `}>
             <ul
@@ -67,19 +68,19 @@ const NavBar = () => {
                 SetisActive(false);
               }}>
               <li className="py-[10px] ">
-                <a href="/">Home</a>
+                <a href="/"> {data.l1}</a>
               </li>
               <li className="py-[10px]">
-                <a href="#about">About</a>
+                <a href="#about"> {data.l2}</a>
               </li>
               <li className="py-[10px]">
-                <a href="#candy">Candy</a>
+                <a href="#candy"> {data.l3}</a>
               </li>
               <li className="py-[10px]">
-                <a href="#newarrival">New</a>
+                <a href="#newarrival"> {data.l4}</a>
               </li>
               <li className="py-[10px]">
-                <a href="#newsletter">Support</a>
+                <a href="#newsletter"> {data.l5}</a>
               </li>
             </ul>
           </div>

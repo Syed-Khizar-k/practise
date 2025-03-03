@@ -1,34 +1,36 @@
 import ArrivalCard from "./arrivalCard";
+import elemdata from "@/data/elemdata.json";
 const NewArrival = () => {
+  const data = elemdata.newArrivals;
   return (
     <section className="min-h-screen" id="newarrival">
       <h1 className="text-[46px] font-[900] text-center py-[20px]">
-        New Arrivals
+        {data.h1}
       </h1>
       <div className="flex gap-8 flex-wrap md:flex-nowrap justify-center items-center">
         <ArrivalCard
-          status="New"
-          img="/new6-img.png"
-          hea="Wish Broom"
-          par="Accessory"
-          price="$7.99"
-          disc="$14.99"
+          status={data.item1.status}
+          img={data.item1.img}
+          hea={data.item1.h1}
+          par={data.item1.p}
+          price={data.item1.price}
+          disc={data.item1.disc}
         />
         <ArrivalCard
-          status="New"
-          img="/new1-img.png"
-          hea="Haunted House"
-          par="Accessory"
-          price="$14.99"
-          disc="$23.70"
+          status={data.item2.status}
+          img={data.item2.img}
+          hea={data.item2.h1}
+          par={data.item2.p}
+          price={data.item2.price}
+          disc={data.item2.disc}
         />
         <ArrivalCard
-          status="New"
-          img="/new2-img.png"
-          hea="Hallowen Candle"
-          par="Accessory"
-          price="$11.99"
-          disc="$28.99"
+          status={data.item3.status}
+          img={data.item3.img}
+          hea={data.item3.h1}
+          par={data.item3.p}
+          price={data.item3.price}
+          disc={data.item3.disc}
         />
       </div>
     </section>
