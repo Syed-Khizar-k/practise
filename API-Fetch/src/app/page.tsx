@@ -1,29 +1,21 @@
+const fetchData = async () => {
+  try {
+    const response = await fetch("https://dummyjson.com/products");
+    const data = await response.json();
+    return data.products;
+  } catch (error) {
+    console.log("Error");
+  }
+};
 
-"use client";
-import { useState } from "react";
-
-const Products = () => {
-  const [products, setProducts] = useState([]);
-
-  const fetchData = async () => {
-    try {
-      const response = await fetch("https://dummyjson.com/products");
-      const data = await response.json();
-      console.log(data.products);
-
-      setProducts(data.products);
-    } catch (error) {
-      console.log("Error");
-    }
-  };
-
+const Products = async () => {
+  const products = await fetchData();
   return (
     <div className="bg-white text-black min-h-screen">
-      <button
-        onClick={fetchData}
-        className="bg-black text-white p-[10px] text-[16px] font-[700] mt-[20px] ml-[50px]">
+      <button className="bg-black text-white p-[10px] text-[16px] font-[700] mt-[20px] ml-[50px]">
         Show All Products
       </button>
+
       <div className="grid grid-cols-4 gap-4 p-[50px]">
         {products.map((product: any) => (
           <div
