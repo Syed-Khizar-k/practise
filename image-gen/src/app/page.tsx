@@ -104,7 +104,7 @@ const ImageGenerator = () => {
         <div className="max-w-sm flex gap-4 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-transparent dark:border-none">
           <a href={url}>
             <img
-              className="rounded-t-lg w-[100%] md:h-[70%] h-[100%] "
+              className="rounded-lg w-[100%] h-[100%]  "
               src={url || "./dev_grid.jpg"}
               alt="no image"
             />

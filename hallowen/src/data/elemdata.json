@@ -2,10 +2,24 @@
   "navigation": {
     "img": "/favicon.png",
     "logo": "Hallowen",
-    "l1": "Home",
-    "l2": "About",
-    "l3": "Candy",
-    "l4": "New",
+    "links": [
+      {
+        "text": "Home",
+        "link": "/"
+      },
+      {
+        "text": "About",
+        "link": "#about"
+      },
+      {
+        "text": "Candy",
+        "link": "#candy"
+      },
+      {
+        "text": "New",
+        "link": "#newarrival"
+      }
+    ],
     "l5": "Support"
   },
 
@@ -21,22 +35,24 @@
   },
 
   "category": {
-    "h1": "favourite scare category",
-    "item1": {
-      "img": "/category1-img.png",
-      "h1": "Ghosts",
-      "p": "Choose the ghosts, the scariest there are"
-    },
-    "item2": {
-      "img": "/category2-img.png",
-      "h1": "Pumpkins",
-      "p": "You look at the Pumpkins, the scariest there are"
-    },
-    "item3": {
-      "img": "/category3-img.png",
-      "h1": "Wish Hat",
-      "p": "Pich the most stylish Wish hat that you want out there"
-    }
+    "h1": "Our Favourite Categories",
+    "items": [
+      {
+        "img": "/category1-img.png",
+        "h1": "Ghosts",
+        "p": "Choose the ghosts, the scariest there are"
+      },
+      {
+        "img": "/category2-img.png",
+        "h1": "Pumpkins",
+        "p": "You look at the Pumpkins, the scariest there are"
+      },
+      {
+        "img": "/category3-img.png",
+        "h1": "Wish Hat",
+        "p": "Pich the most stylish Wish hat that you want out there"
+      }
+    ]
   },
 
   "about": {
@@ -48,42 +64,44 @@
 
   "candy": {
     "mh1": "Trick Or Teat",
-    "item1": {
-      "img": "/trick-treat1-img.png",
-      "h1": "toffee",
-      "p": "candy",
-      "price": "$ 12.12"
-    },
-    "item2": {
-      "img": "/trick-treat2-img.png",
-      "h1": "bone",
-      "p": "accessory",
-      "price": "$ 8.99"
-    },
-    "item3": {
-      "img": "/trick-treat3-img.png",
-      "h1": "sacrecrow",
-      "p": "accessory",
-      "price": "$ 15.10"
-    },
-    "item4": {
-      "img": "/trick-treat4-img.png",
-      "h1": "candy cane",
-      "p": "candy",
-      "price": "$ 7.0"
-    },
-    "item5": {
-      "img": "/trick-treat5-img.png",
-      "h1": "pumpkin",
-      "p": "candy",
-      "price": "$ 19.97"
-    },
-    "item6": {
-      "img": "/trick-treat6-img.png",
-      "h1": "ghost",
-      "p": "accessory",
-      "price": "$ 17.99"
-    }
+    "items": [
+      {
+        "img": "/trick-treat1-img.png",
+        "h1": "toffee",
+        "p": "candy",
+        "price": "$ 12.12"
+      },
+      {
+        "img": "/trick-treat2-img.png",
+        "h1": "bone",
+        "p": "accessory",
+        "price": "$ 8.99"
+      },
+      {
+        "img": "/trick-treat3-img.png",
+        "h1": "sacrecrow",
+        "p": "accessory",
+        "price": "$ 15.10"
+      },
+      {
+        "img": "/trick-treat4-img.png",
+        "h1": "candy cane",
+        "p": "candy",
+        "price": "$ 7.0"
+      },
+      {
+        "img": "/trick-treat5-img.png",
+        "h1": "pumpkin",
+        "p": "candy",
+        "price": "$ 19.97"
+      },
+      {
+        "img": "/trick-treat6-img.png",
+        "h1": "ghost",
+        "p": "accessory",
+        "price": "$ 17.99"
+      }
+    ]
   },
 
   "discount": {
@@ -95,31 +113,33 @@
   "newArrivals": {
     "h1": "New Arrivals",
 
-    "item1": {
-      "img": "/new6-img.png",
-      "h1": "Wish Broom",
-      "p": "Accessory",
-      "price": "$7.99",
-      "disc": "$14.99",
-      "status": "New"
-    },
+    "items": [
+      {
+        "img": "/new6-img.png",
+        "h1": "Wish Broom",
+        "p": "Accessory",
+        "price": "$7.99",
+        "disc": "$14.99",
+        "status": "New"
+      },
 
-    "item2": {
-      "img": "/new1-img.png",
-      "h1": "Haunted House",
-      "p": "Accessory",
-      "price": "$14.99",
-      "disc": "$23.70",
-      "status": "New"
-    },
-    "item3": {
-      "img": "/new2-img.png",
-      "h1": "Hallowen Candle",
-      "p": "Accessory",
-      "price": "$11.99",
-      "disc": "$28.99",
-      "status": "New"
-    }
+      {
+        "img": "/new1-img.png",
+        "h1": "Haunted House",
+        "p": "Accessory",
+        "price": "$14.99",
+        "disc": "$23.70",
+        "status": "New"
+      },
+      {
+        "img": "/new2-img.png",
+        "h1": "Hallowen Candle",
+        "p": "Accessory",
+        "price": "$11.99",
+        "disc": "$28.99",
+        "status": "New"
+      }
+    ]
   },
 
   "newsletter": {
@@ -136,9 +156,13 @@
 
     "about": {
       "h1": "About",
-      "l1": "About Us",
-      "l2": "Features",
-      "l3": "News"
+      "links": [
+        {
+          "l1": "About Us",
+          "l2": "Features",
+          "l3": "News"
+        }
+      ]
     },
     "services": {
       "h1": "Our Services",

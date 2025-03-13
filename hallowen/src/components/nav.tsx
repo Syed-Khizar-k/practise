@@ -15,34 +15,18 @@ const NavBar = () => {
         </a>
         <div className="">
           <ul className="hidden  md:flex justify-center items-center gap-8 font-medium">
-            <li className="">
-              <a
-                href="/"
-                className="after:block after:h-1 after:w-1 after:ml-5 after:rounded-lg after:bg-white after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
-                {data.l1}
-              </a>
-            </li>
-            <li>
-              <a
-                href="#about"
-                className="after:block after:h-1 after:w-1 after:ml-5 after:rounded-lg after:bg-white after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
-                {data.l2}
-              </a>
-            </li>
-            <li>
-              <a
-                href="#candy"
-                className="after:block after:h-1 after:w-1 after:ml-5 after:rounded-lg after:bg-white after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
-                {data.l3}
-              </a>
-            </li>
-            <li>
-              <a
-                href="#newarrival"
-                className="after:block after:h-1 after:w-1 after:ml-5 after:rounded-lg after:bg-white after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
-                {data.l4}
-              </a>
-            </li>
+            {data.links.map((ls, index) => {
+              return (
+                <li className="Link" key={index}>
+                  <a
+                    href={ls.link}
+                    className="after:block after:h-1 after:w-1 after:ml-5 after:rounded-lg after:bg-white after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300">
+                    {ls.text}
+                  </a>
+                </li>
+              );
+            })}
+
             <li className="py-[6px] px-[15px] border border-white rounded-3xl">
               <a href="#newsletter">{data.l5}</a>
             </li>
@@ -59,26 +43,21 @@ const NavBar = () => {
             </button>
           </div>
           <div
-            className={` mobile w-[70vw] h-[50vh] bg-gray-800/15 backdrop-blur-lg   absolute right-[0] p-[20px] 
-            ${isActive ? "opacity-100 scale-100" : "opacity-0 scale-90"}
-        `}>
+            className={` mobile w-[70vw] h-[50vh] bg-gray-800/15  absolute right-[0] p-[20px] backdrop-blur
+            ${isActive ? "opacity-100 scale-100" : "opacity-0 scale-90"}`}>
             <ul
               className="text-[18px] font-[900]"
               onClick={() => {
                 SetisActive(false);
               }}>
-              <li className="py-[10px] ">
-                <a href="/"> {data.l1}</a>
-              </li>
-              <li className="py-[10px]">
-                <a href="#about"> {data.l2}</a>
-              </li>
-              <li className="py-[10px]">
-                <a href="#candy"> {data.l3}</a>
-              </li>
-              <li className="py-[10px]">
-                <a href="#newarrival"> {data.l4}</a>
-              </li>
+              {data.links.map((link, index) => {
+                return (
+                  <li className="py-[10px] " key={index}>
+                    <a href={link.link}> {link.text}</a>
+                  </li>
+                );
+              })}
+
               <li className="py-[10px]">
                 <a href="#newsletter"> {data.l5}</a>
               </li>
